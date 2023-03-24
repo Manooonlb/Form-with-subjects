@@ -3,8 +3,9 @@
 $name = $_POST['user_name'];
 $subject= $_POST['subject'];
 $message = $_POST['user_message'];
-$email = $_POST['user_email'];
+$email = filter_var($_POST['email']);
 $phone = $_POST['user_phone'];
+
 
 ?>
 <!DOCTYPE html>
